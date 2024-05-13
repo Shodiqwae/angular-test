@@ -1,0 +1,6 @@
+<h2>Post data</h2>
+<button (click)="postDataToApi()">Kirim</button>
+<div *ngIf="postData" style="background-color: black; color: aliceblue;">
+  <p>Data yang telah dipost:</p>
+  <pre>{{ postData | json }}</pre>
+</div>
